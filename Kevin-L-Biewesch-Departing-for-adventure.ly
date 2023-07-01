@@ -13,6 +13,8 @@ date = #(strftime "%B %d %Y" (localtime (current-time)))
   } }
 }
 
+#(set-global-staff-size 18.5)
+
 \paper {
   #(set-paper-size "a4")
 }
