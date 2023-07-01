@@ -17,6 +17,8 @@ date = #(strftime "%B %d %Y" (localtime (current-time)))
 
 \paper {
   #(set-paper-size "a4")
+  evenHeaderMarkup = \markup { \if \should-print-page-number { \fill-line { "" \fromproperty #'page:page-number-string } } }
+  oddHeaderMarkup = \evenHeaderMarkup
 }
 
 \include "global.ly"
