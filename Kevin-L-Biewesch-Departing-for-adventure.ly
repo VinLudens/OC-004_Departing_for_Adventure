@@ -1,10 +1,16 @@
 \version "2.18.2"
 
+date = #(strftime "%B %d %Y" (localtime (current-time)))
 \header {
   title = "Departing for Adventure"
   subtitle = "Original Composition No. 4"
   %instrument = "Piano"
   composer = "Kevin L. Biewesch"
+  tagline = \markup { \center-column {
+    \with-url #"https://youtube.com/@VinLudens"
+    \line { "Engraving with Lilypond" $(lilypond-version) \char ##x2014 "https://youtube.com/@VinLudens" }
+    \line { \small \italic {  October 28 2018  } }
+  } }
 }
 
 \paper {
