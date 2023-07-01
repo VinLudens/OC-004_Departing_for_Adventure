@@ -2,6 +2,7 @@
 
 \header {
   title = "Departing for Adventure"
+  subtitle = "Original Composition No. 4"
   %instrument = "Piano"
   composer = "Kevin L. Biewesch"
 }
